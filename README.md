@@ -16,6 +16,7 @@ Training data include 700 essays from [BEA 2019 training data](https://www.cl.ca
 
 ## Citation
 
+```bibtex
 @inproceedings{mwe-gec,
   author = {Shiva Taslimipoor and Christopher Bryant and Zheng Yuan and Diane Nicholls and Andrew Caines and Paula Buttery},
   year = {2026},
@@ -24,3 +25,5 @@ Training data include 700 essays from [BEA 2019 training data](https://www.cl.ca
   publisher = {Association for Computational Linguistics},
   url = {https://aclanthology.org/}
 }
+
+
