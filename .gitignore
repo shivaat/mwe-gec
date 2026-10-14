@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Custom Dataset & Output Ignores
+data/
+*.csv
+*.parquet
+*.h5
+*.pt
