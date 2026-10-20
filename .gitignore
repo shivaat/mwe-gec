@@ -219,6 +219,9 @@ __marimo__/
 
 # Custom Dataset & Output Ignores
 data/
+*.m2
+*.cor
+*.orig
 *.csv
 *.parquet
 *.h5

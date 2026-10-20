@@ -1,0 +1,8 @@
+{
+	"cor-mwe_file": "../../../Data/MWE-GEC/dev/ann1/bea.dev.ABCN.mwe_ann.txt",
+	"cor_file": "../../../Data/MWE-GEC/dev/ann1/bea.dev.ABCN.cor",
+	"orig_file": "../../../Data/MWE-GEC/dev/ann1/bea.dev.ABCN.orig",
+	"m2_file": "../../bea.dev.m2",
+	"output_dir": "./"
+
+}

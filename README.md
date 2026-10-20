@@ -9,10 +9,65 @@ The dataset contains the annotation of 1,850 corrected English essays for Multiw
 
 Training data include 700 essays from [BEA 2019 training data](https://www.cl.cam.ac.uk/research/nl/bea2019st/#data) and 700 essays from [W&I Corpus 2024](https://researchdatasets.cambridge.org/datasets/write-and-improve-corpus-2024). The development data is the exact **BEA 2019 dev set** available at https://www.cl.cam.ac.uk/research/nl/bea2019st/#dain including 350 essays which are split into different CEFR levels (A, B, C) and native speakers (N). They are annotated by two annotators for MWEs. MWE tagging is in BIO format where the tags _[B-X] and _[I-X] attached to the tokens represent the beginning and the continuation of an MWE, respectively. The tag X depicts that the MWE type is not available in the annotated corpus. This repository provides scripts for automatic categorisation of MWE types or for converting the .txt files to PARSEME conllu format.
 
+## Scripts
+
+### `gec_mwe_to_conllu.py`
+
+converts MWE-annotated text files to PARSEME conllu format.
+
+#### Usage
+
+```bash
+python gec_mwe_to_conllu.py -i <path_to_input> -o <path_to_output>
+```
+
+#### Arguments
+| Argument | Description |
+|---|---|
+| `-i`, `--input` | Path to the input MWE-annotated text file. |
+| `-o`, `--output` | Path to the output PARSEME CoNLL-U file. |
+
+### `add_mwe_edits_to_m2.py`
+
+Adds MWE edits to an existing GEC M2 file as an additional error type.
+
+The script takes aligned GEC files (`.cor`, `.orig`, and `.m2`) together with the MWE-annotated `.txt` file, and writes a new `.m2` file containing the original edits plus the MWE edits.
+
+#### Requirements
+
+This script requires [ERRANT](https://github.com/chrisjmccormick/errant) to be installed.
+
+#### Configuration
+
+Create a `config.json` file specifying the paths to the input files and the output directory:
+
+```json
+{
+  "cor": "<path_to_input>.cor",
+  "orig": "<path_to_input>.orig",
+  "m2": "<path_to_input>.m2",
+  "mwe_txt": "<path_to_input>.txt",
+  "output_dir": "<path_to_output_directory>"
+}
+```
+
+#### Usage
+
+```bash
+python add_mwe_edits_to_m2.py <path_to_config.json>
+```
+
+#### Arguments
+
+| Argument | Description |
+|---|---|
+| `<path_to_config.json>` | Path to the `config.json` configuration file. |
+
+
+
 ## To Be added:
-- script for adding MWE errors as a new error type in ERRANT m2 files
 - scripts for MWE type classification
-- scripts for converting the MWE-annotated texts files to PARSEME conllu format
+
 
 ## Citation
 
