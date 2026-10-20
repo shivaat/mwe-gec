@@ -21,11 +21,6 @@ converts MWE-annotated text files to PARSEME conllu format.
 python gec_mwe_to_conllu.py -i <path_to_input> -o <path_to_output>
 ```
 
-#### Arguments
-| Argument | Description |
-|---|---|
-| `-i`, `--input` | Path to the input MWE-annotated text file. |
-| `-o`, `--output` | Path to the output PARSEME CoNLL-U file. |
 
 ### `add_mwe_edits_to_m2.py`
 
@@ -43,10 +38,10 @@ Create a `config.json` file specifying the paths to the input files and the outp
 
 ```json
 {
-  "cor": "<path_to_input>.cor",
-  "orig": "<path_to_input>.orig",
-  "m2": "<path_to_input>.m2",
-  "mwe_txt": "<path_to_input>.txt",
+  "cor_file": "<path_to_input>.cor",
+  "orig_file": "<path_to_input>.orig",
+  "m2_file": "<path_to_input>.m2",
+  "cor-mwe_file": "<path_to_input>.txt",
   "output_dir": "<path_to_output_directory>"
 }
 ```
@@ -56,12 +51,6 @@ Create a `config.json` file specifying the paths to the input files and the outp
 ```bash
 python add_mwe_edits_to_m2.py <path_to_config.json>
 ```
-
-#### Arguments
-
-| Argument | Description |
-|---|---|
-| `<path_to_config.json>` | Path to the `config.json` configuration file. |
 
 
 
