@@ -1,5 +1,5 @@
 # mwe-gec
-This is the repository for processing scripts, releases, and publication resources for the MWE-GEC dataset released with the paper "Mind the Phrase: Annotation and Identification of Multiword Expressions in Grammatical Error Correction" accepted for EMNLP 2026 Findings.
+This is the repository for processing scripts, releases, and publication resources for the MWE-GEC dataset released with the paper "[Mind the Phrase: Annotation and Identification of Multiword Expressions in Grammatical Error Correction](https://aclanthology.org/2026.findings-emnlp.2165/)" published in the Findings of EMNLP 2026.
 
 The dataset can be downloaded at https://researchdatasets.cambridge.org/datasets/mwe-gec-annotation.
 
@@ -67,7 +67,7 @@ python add_mwe_edits_to_m2.py <path_to_config.json>
   title = {Mind the Phrase: Annotation and Identification of Multiword Expressions in Grammatical Error Correction},
   booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
   publisher = {Association for Computational Linguistics},
-  url = {https://aclanthology.org/}
+  url = {https://aclanthology.org/2026.findings-emnlp.2165/}
 }
 
 
